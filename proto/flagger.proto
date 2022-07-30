@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option go_package = "./pb";
+
+message FlagEvent {
+  bool flag_removed = 1;
+  int64 rolling_up_period_start = 2;
+}
+
+message FlagValue {
+  bool flagged = 1;
+  int64 rolling_up_period_start = 2;
+}
